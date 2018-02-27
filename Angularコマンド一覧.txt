@@ -1,0 +1,38 @@
+Angularコマンド一覧
+
+【Angular CLIのインストール】
+  npm install -g @angular/cli
+
+【新しいAngularアプリケーションの作成】
+  cd [root-dir]
+  ng new [app-name]
+
+【アプリケーションの起動】
+  cd [app-dir]
+  ng serve --open
+
+【コンポーネントの新規作成】
+  cd [app-dir]
+  ng generate component [component-name]
+  ※src/app直下ではなくサブフォルダ内に作成したい場合は[component-name]に
+    [sub-dir]/[component-name]のように指定する。
+
+【サービスの新規作成】
+  cd [app-dir]
+  ng generate service [service-name] --module=app
+  ※src/app直下ではなくサブフォルダ内に作成したい場合は[service-name]に
+    [sub-dir]/[service-name]のように指定する。
+
+【クラスの新規作成】
+  cd [app-dir]
+  ng generate class [class-name]
+  ※src/app直下ではなくサブフォルダ内に作成したい場合は[class-name]に
+    [sub-dir]/[class-name]のように指定する。
+
+【ルーティングモジュールの新規作成】
+  cd [app-dir]
+  ng generate module app-routing --flat --module=app
+
+【karmaの実行】
+  cd [app-dir]
+  karma start
